@@ -1,0 +1,42 @@
+/* 🔎 Search Bar Container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* 📝 Input Box */
+.search-input {
+  width: 250px;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+
+/* 🌟 Input Focus Effect */
+.search-input:focus {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* 🔍 Search Button */
+.search-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #4caf50;
+  color: white;
+  transition: 0.3s;
+}
+
+/* 🎨 Hover Effect */
+.search-button:hover {
+  background: #45a049;
+}

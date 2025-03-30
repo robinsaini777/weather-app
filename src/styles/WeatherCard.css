@@ -1,0 +1,58 @@
+/* 🌤️ Weather Card Container */
+.weather-card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* 🖱️ Hover Effect */
+.weather-card:hover {
+  transform: scale(1.05);
+}
+
+/* 📍 City Name */
+.city-name {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* 🌤️ Weather Icon */
+.weather-icon {
+  width: 100px;
+  height: 100px;
+  margin: 10px 0;
+}
+
+/* 🎭 Animated Icon */
+.animate-icon {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* 🌡️ Temperature */
+.temperature {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* 📊 Weather Details */
+.weather-details {
+  font-size: 14px;
+  margin-top: 10px;
+  opacity: 0.9;
+}
