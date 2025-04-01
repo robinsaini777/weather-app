@@ -68,9 +68,7 @@
 /* 🎯 Main Container Fix */
 .container {
   position: relative;
-  /* ✅ Clouds ke neeche rahega */
   z-index: 2;
-  /* ✅ Clouds se upar */
 }
 
 /* 🌥️ Moving Clouds Animation */

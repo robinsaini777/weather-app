@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/SearchBar.css";
 
-const API_KEY = "ae1ae157f9f5da64ccb83f8d405a3258"; // ✅ Tumhari API Key
+const API_KEY = "ae1ae157f9f5da64ccb83f8d405a3258"; // 
 
 function SearchBar({ setWeather }) {
   const [city, setCity] = useState("");
