@@ -1,12 +1,11 @@
-/* 🔎 Search Bar Container */
 .search-container {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
-/* 📝 Input Box */
 .search-input {
   width: 250px;
   padding: 12px;
@@ -19,12 +18,10 @@
   transition: 0.3s ease-in-out;
 }
 
-/* 🌟 Input Focus Effect */
 .search-input:focus {
   background: rgba(255, 255, 255, 0.4);
 }
 
-/* 🔍 Search Button */
 .search-button {
   padding: 12px 20px;
   font-size: 16px;
@@ -36,7 +33,16 @@
   transition: 0.3s;
 }
 
-/* 🎨 Hover Effect */
 .search-button:hover {
   background: #45a049;
+}
+
+@media (max-width: 480px) {
+  .search-input {
+    width: 100%;
+  }
+
+  .search-button {
+    width: 100%;
+  }
 }

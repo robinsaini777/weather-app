@@ -1,4 +1,3 @@
-/* 🌟 Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,38 +5,39 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* 🔥 App Background */
 .app {
-  height: 100vh;
+  min-height: 100vh;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease-in-out;
+  flex-direction: column;
 }
 
-/* 🌤️ Light Mode */
 .light {
   background: linear-gradient(135deg, #89f7fe, #66a6ff);
   color: #222;
 }
 
-/* 🌙 Dark Mode */
 .dark {
   background: linear-gradient(135deg, #1c1c1c, #121212);
   color: white;
 }
 
-/* 📦 Main Container */
 .container {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
-  padding: 70px;
+  padding: 50px 30px;
   border-radius: 15px;
   text-align: center;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  z-index: 2;
 }
 
-/* 🎭 Dark Mode Button */
 .toggle-mode {
   padding: 5px 15px;
   font-size: 16px;
@@ -48,30 +48,23 @@
   border-radius: 10px;
   transition: 0.3s;
   position: absolute;
-    bottom: 15px;
-    right: 15px;
+  bottom: 15px;
+  right: 15px;
 }
 
 .toggle-mode:hover {
   background: #7be600;
 }
 
-/* 🌍 App Title */
 .app-title {
   font-size: 24px;
   margin-bottom: 15px;
   position: absolute;
   top: 15px;
-  left: 150px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-/* 🎯 Main Container Fix */
-.container {
-  position: relative;
-  z-index: 2;
-}
-
-/* 🌥️ Moving Clouds Animation */
 .clouds {
   position: absolute;
   top: 0;
@@ -79,19 +72,34 @@
   width: 100vw;
   height: 100vh;
   background: url('../assets/clouds.jpg');
-  /* Cloud Image */
   background-size: cover;
   opacity: 0.7;
   filter: blur(5px);
+  z-index: 0;
 }
 
-/* 🌤️ Cloud Animation */
 @keyframes moveClouds {
   0% {
     background-position: 0 0;
   }
-
   100% {
     background-position: -100vw 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  .app-title {
+    font-size: 20px;
+    top: 10px;
+  }
+
+  .toggle-mode {
+    font-size: 14px;
+    bottom: 10px;
+    right: 10px;
   }
 }
