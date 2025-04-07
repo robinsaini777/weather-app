@@ -87,7 +87,13 @@
   }
 }
 
+/* ✅ Mobile Responsive Adjustments */
 @media (max-width: 480px) {
+  .app {
+    justify-content: flex-start;
+    padding-top: 60px;
+  }
+
   .container {
     padding: 30px 20px;
   }
