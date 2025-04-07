@@ -88,15 +88,24 @@
 }
 
 /* ✅ Mobile Responsive Adjustments */
+
 @media (max-width: 480px) {
   .container {
     padding: 30px 20px;
   }
 
   .app-title {
-    font-size: 20px;
-    top: 10px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    position: static; 
+    transform: none;  
   }
+  
 
   .toggle-mode {
     font-size: 14px;
